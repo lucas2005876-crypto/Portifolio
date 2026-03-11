@@ -1,0 +1,30 @@
+.header-page {
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.links-header {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.links-header a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+}
+
+.header-page p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0 10px;
+}

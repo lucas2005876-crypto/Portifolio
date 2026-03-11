@@ -1,0 +1,38 @@
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.conteudo p {
+  margin: 10px 0 0 10px;
+  font-size: 40px;
+}
+
+.imagemContainer {
+  width: 600px;
+  height: 4500px;
+  background-color: transparent;
+  margin-left: 00px;
+}
+
+.imagemContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.conteudo button {
+  border: none;
+  display: block;
+  background-color: transparent;
+  color: var(--cor-primaria);
+  font-size: 100px;
+  padding: 0;
+}
+
+.imgeButton {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}

@@ -1,0 +1,32 @@
+.sobre-mim {
+  width: 100%;
+  min-height: 200vh;
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  gap: 200px;
+  color: var(--cor-texto);
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-height: 70vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--cor-secundaria);
+}
+
+.titulo-SM {
+  margin: 20px 0 5px 0;
+  font-size: 45px;
+  width: 49%;
+  padding-left: 4px;
+  text-align: left;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}

@@ -1,0 +1,15 @@
+:root {
+  --cor-primaria: #287ab1;
+  --cor-secundaria: #e4e4e4;
+  --cor-texto: rgb(23, 73, 182);
+  --fonte-padrao: "Noto Serif", serif;
+}
+
+html,
+body {
+  font-family: var(--fonte-padrao);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}

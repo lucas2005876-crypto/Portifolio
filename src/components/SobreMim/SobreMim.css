@@ -30,3 +30,13 @@
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
 }
+
+.sobre-mim button {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sobre-mim button:hover {
+  cursor: pointer;
+  color: var(--cor-texto);
+}

@@ -15,6 +15,26 @@
 }
 
 .foto-topo h1 {
-  margin: auto 0 20px 0;
+  margin: auto 0 30px 0;
   font-size: 100px;
+}
+
+.titulo-scroll {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.titulo-scroll span {
+  display: inline-block;
+  animation: scrollTexto 10s linear infinite;
+}
+
+@keyframes scrollTexto {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }

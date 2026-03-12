@@ -5,7 +5,7 @@ function Conteudo() {
   const conteudos = [
     {
       texto:
-        "Sou estudante de Ciência da Computação e entusiasta do desenvolvimento de software. Tenho interesse tanto em desenvolvimento front-end quanto back-end, buscando sempre aprender novas tecnologias e aprimorar minhas habilidades.",
+        "Sou estudante de Ciência da Computação e entusiasta do desenvolvimento de software. Tenho interesse em desenvolvimento front-end e back-end. Estou buscando sempre aprender novas tecnologias e aprimorar minhas habilidades.",
       imagem: "/images/pccode.png",
     },
     {
@@ -21,22 +21,28 @@ function Conteudo() {
   ];
 
   const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(false);
 
   function Proximo() {
-    if (index === conteudos.length - 1) {
-      setIndex(0);
-    } else {
-      setIndex(index + 1);
-    }
+    setFade(true);
+
+    setTimeout(() => {
+      if (index === conteudos.length - 1) {
+        setIndex(0);
+      } else {
+        setIndex(index + 1);
+      }
+      setFade(false);
+    }, 300);
   }
 
   return (
-    <div className="conteudo">
+    <div className={`conteudo ${fade ? "fade" : ""}`}>
       <p>{conteudos[index].texto}</p>
 
       <div className="imgeButton">
         <div className="imagemContainer">
-          <img src={conteudos[index].imagem} />
+          <img src={conteudos[index].imagem} alt="Ilustração" />
         </div>
 
         <button onClick={Proximo}>{">"}</button>

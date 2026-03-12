@@ -1,6 +1,7 @@
 
 import './App.css'
 import FotoLucas from './components/FotoLucas'
+import Projetos from './components/Projetos'
 import SobreMim from './components/SobreMim'
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <>
      <FotoLucas></FotoLucas>
      <SobreMim></SobreMim>
-     {/* <Trabalhos></Trabalhos>
-     <Contatos></Contatos> */}
+      <Projetos></Projetos>
+   {/* <Contatos></Contatos>  */}
     </>
   )
 }

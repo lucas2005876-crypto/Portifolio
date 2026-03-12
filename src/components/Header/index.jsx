@@ -5,15 +5,9 @@ function Header() {
     <div className="header-page">
       <p>Feito em React 18</p>
       <div className="links-header">
-        <a href="" >
-          Sobre mim
-        </a>
-        <a href="" >
-          Trabalhos
-        </a>
-        <a href="" >
-          Contatos
-        </a>
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="">Projetos</a>
+        <a href="">Contatos</a>
       </div>
     </div>
   );

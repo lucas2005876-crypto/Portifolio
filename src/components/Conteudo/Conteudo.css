@@ -3,16 +3,21 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
+  transition: opacity 0.3s ease;
 }
 
 .conteudo p {
   margin: 10px 0 0 10px;
   font-size: 40px;
+  line-height: 65px;
 }
 
+.conteudo.fade {
+  opacity: 0;
+}
 .imagemContainer {
   width: 600px;
-  height: 4500px;
+  height: 450px;
   background-color: transparent;
   margin-left: 00px;
 }

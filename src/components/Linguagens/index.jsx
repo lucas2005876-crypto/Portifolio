@@ -5,16 +5,16 @@ function Linguagens() {
     <div className="section-ling">
       <h2>Linguagens e tecnologias:</h2>
       <div className="section-icons">
-        <img src="/icons/java.png" alt="java" />
-        <img src="/icons/html.png" alt="html" />
-        <img src="/icons/css-3.png" alt="css" />
-        <img src="/icons/js.png" alt="js" />
-        <img src="/icons/react.png" alt="react" />
-        <img src="/icons/github.png" alt="github" />
-        <img src="/icons/Csharp.png" alt="C#" />
-        <img src="/icons/postgre.png" alt="PostgreSql" />
-        <img src="/icons/oracle_bdd.png" alt="OracleDB" />
-        <img src="/icons/docker.png" alt="Docker" />
+        <img src="/icons/java.png" alt="java" title="Java" />
+        <img src="/icons/html.png" alt="html" title="Html" />
+        <img src="/icons/css-3.png" alt="css" title="Css" />
+        <img src="/icons/js.png" alt="js" title="JavaScript" />
+        <img src="/icons/react.png" alt="react" title="React" />
+        <img src="/icons/github.png" alt="github" title="Github" />
+        <img src="/icons/Csharp.png" alt="C#" title="C#" />
+        <img src="/icons/postgre.png" alt="PostgreSql" title="PostgreSql" />
+        <img src="/icons/oracle_bdd.png" alt="OracleDB" title="OracleDB" />
+        <img src="/icons/docker.png" alt="Docker" title="Docker" />
       </div>
       <a
         href="https://www.flaticon.com/br/icones-gratis/html"

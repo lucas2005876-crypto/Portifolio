@@ -1,7 +1,7 @@
 .contatos {
   background-color: var(--cor-primaria);
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;

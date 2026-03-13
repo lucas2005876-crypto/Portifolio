@@ -6,19 +6,23 @@
   min-height: 70vh;
   background-color: var(--cor-secundaria);
   transition: opacity 0.3s ease;
+  height: 630px;
 }
 
 .textoCurso {
   width: 50%;
   display: flex;
+  margin: 0;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 15px;
   transition: opacity 0.3s ease;
 }
 
 .textoCurso p {
-  font-size: 30px;
-  line-height: 50px;
+  margin-top: 15px;
+  font-size: 35px;
+  line-height: 45px;
+  margin: 7px 0;
 }
 
 .titulo-cursos {
@@ -71,4 +75,28 @@
 }
 .imgCurso.eagle {
   background-image: url("/images/eagle.jpg");
+}
+
+@media (max-width: 1800px) {
+  .textoCurso p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .textoCurso p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.img1 {
+  background-image: url("/images/binary.jpg");
+}
+.img2 {
+  background-image: url("/images/45211.jpg");
+}
+.img3 {
+  background-image: url("/images/meeting.jpg");
 }

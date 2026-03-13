@@ -1,11 +1,11 @@
 import { use, useState } from "react";
 import "./Cursos.css";
 
-function Cursos() {
+function Cursos({ isSM }) {
   const conteudos = [
     {
       texto:
-        "Estou no quinto semestre do curso de Ciência da Computação na Universidade Feevale, iniciado em 2024, com previsão de conclusão em 2028. Durante a graduação venho adquirindo conhecimentos em diversas áreas da tecnologia da informação, incluindo programação, banco de dados, engenharia de software e processamento de imagens. Esses estudos têm contribuído para o desenvolvimento da minha base teórica e prática na área da computação.",
+        "Estou no quinto semestre do curso de Ciência da Computação na Universidade Feevale, com previsão de conclusão em 2028. Durante a graduação venho adquirindo conhecimentos em diversas áreas, incluindo programação, banco de dados, engenharia de software, entre outros. Esses estudos têm contribuído para o desenvolvimento da minha base teórica e prática na área da computação.",
       imagem: "feevale",
     },
     {
@@ -25,6 +25,23 @@ function Cursos() {
       imagem: "eagle",
     },
   ];
+  const sobremim = [
+    {
+      texto:
+        "Sou estudante de Ciência da Computação e entusiasta do desenvolvimento de software. Tenho interesse em desenvolvimento front-end e back-end. Estou buscando sempre aprender novas tecnologias e aprimorar minhas habilidades.",
+      imagem: "img1",
+    },
+    {
+      texto:
+        "Também possuo interesse em desenvolvimento de jogos e banco de dados, áreas nas quais já tive contato durante meus estudos e projetos pessoais.",
+      imagem: "img2",
+    },
+    {
+      texto:
+        "Atualmente, estou em busca de uma oportunidade no mercado de trabalho onde eu possa continuar aprendendo, evoluir como desenvolvedor e aplicar meus conhecimentos para contribuir com bons resultados em equipe e em projetos reais.",
+      imagem: "img3",
+    },
+  ];
 
   const [index, setIndex] = useState(0);
   const [isMoving, setisMoving] = useState(false);
@@ -32,26 +49,50 @@ function Cursos() {
   function Proximo() {
     setisMoving(true);
 
-    setTimeout(() => {
-      setIndex((prev) => (prev === conteudos.length - 1 ? 0 : prev + 1));
-      setisMoving(false);
-    }, 300);
+    if (isSM) {
+      setTimeout(() => {
+        setIndex((prev) => (prev === sobremim.length - 1 ? 0 : prev + 1));
+        setisMoving(false);
+      }, 300);
+    } else {
+      setTimeout(() => {
+        setIndex((prev) => (prev === conteudos.length - 1 ? 0 : prev + 1));
+        setisMoving(false);
+      }, 300);
+    }
   }
 
-  return (
-    <div className="cursos">
-      <div className={`textoCurso  ${isMoving ? "moving" : ""}`}>
-        <h2 className="titulo-cursos">Cursos e Certificações:</h2>
-        <p>{conteudos[index].texto}</p>
-      </div>
+  if (isSM) {
+    return (
+      <div className="cursos">
+        <div className={`textoCurso  ${isMoving ? "moving" : ""}`}>
+          <h2 className="titulo-cursos">Sobre mim:</h2>
+          <p>{sobremim[index].texto}</p>
+        </div>
 
-      <div
-        className={`imgCurso ${conteudos[index].imagem} ${isMoving ? "moving" : ""}`}
-      >
-        <button onClick={Proximo}>{">"}</button>
+        <div
+          className={`imgCurso ${sobremim[index].imagem} ${isMoving ? "moving" : ""}`}
+        >
+          <button onClick={Proximo}>{">"}</button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="cursos">
+        <div className={`textoCurso  ${isMoving ? "moving" : ""}`}>
+          <h2 className="titulo-cursos">Cursos e Certificações:</h2>
+          <p>{conteudos[index].texto}</p>
+        </div>
+
+        <div
+          className={`imgCurso ${conteudos[index].imagem} ${isMoving ? "moving" : ""}`}
+        >
+          <button onClick={Proximo}>{">"}</button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Cursos;

@@ -13,7 +13,7 @@ function Projetos() {
     {
       titulo: "Visualise - Editor de Imagem",
       imagem: "/images/Visualise.png",
-      linkgh: "https://github.com/ViniQuadros/Editor-de-Imagem.git",
+      linkgh: "https://github.com/lucas2005876-crypto/Visualise.git",
       texto:
         "Aplicação desktop desenvolvida em Java com interface gráfica utilizando JavaFX, criada como projeto acadêmico. O sistema permite editar imagens através de diversas operações implementadas diretamente no backend, onde cada função manipula os pixels individualmente para aplicar alterações. Essa abordagem exigiu uma lógica mais complexa de processamento de imagem, permitindo compreender melhor como transformações gráficas funcionam em nível de pixel.",
     },

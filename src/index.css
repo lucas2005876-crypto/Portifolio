@@ -1,9 +1,13 @@
 :root {
-  --cor-primaria: #287ab1;
+  --cor-primaria: #1b53a8;
   --cor-secundaria: #e4e4e4;
-  --cor-texto: rgb(23, 73, 182);
+  --cor-texto: rgb(0, 54, 170);
   --fonte-padrao: "Noto Serif", serif;
 }
+/* 
+  --cor-primaria: #287ab1;
+  --cor-secundaria: #e4e4e4;
+  --cor-texto: rgb(23, 73, 182); */
 
 html,
 body {

@@ -7,7 +7,7 @@ function Header() {
       <div className="links-header">
         <a href="#sobre-mim">Sobre mim</a>
         <a href="#projetos">Projetos</a>
-        <a href="">Contatos</a>
+        <a href="#contatos">Contatos</a>
       </div>
     </div>
   );

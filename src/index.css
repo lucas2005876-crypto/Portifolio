@@ -4,11 +4,16 @@
   --cor-texto: rgb(0, 54, 170);
   --fonte-padrao: "Noto Serif", serif;
 }
-/* 
-  --cor-primaria: #287ab1;
-  --cor-secundaria: #e4e4e4;
-  --cor-texto: rgb(23, 73, 182); */
 
+.tema-escuro {
+  --cor-primaria: #0e0e0e;
+  --cor-secundaria: #4d1d8d;
+  --cor-texto: #000000;
+
+  .foto-topo {
+    background-image: url("/images/foto_dark.png");
+  }
+}
 html,
 body {
   background-color: var(--cor-secundaria);

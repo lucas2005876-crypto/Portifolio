@@ -1,9 +1,22 @@
+import { useState } from "react";
 import "./Header.css";
 
 function Header() {
+  const [tema, setTema] = useState(true);
+
+  function trocarTema() {
+    if (tema) {
+      setTema(false);
+      document.body.classList.add("tema-escuro");
+    } else {
+      setTema(true);
+      document.body.classList.remove("tema-escuro");
+    }
+  }
+
   return (
     <div className="header-page">
-      <p>Feito em React 18</p>
+      <button onClick={trocarTema}>Trocar Tema</button>
       <div className="links-header">
         <a href="#sobre-mim">Sobre mim</a>
         <a href="#projetos">Projetos</a>

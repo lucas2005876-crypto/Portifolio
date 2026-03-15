@@ -1,6 +1,10 @@
 import "./Contatos.css";
+import { Header } from "../Header";
 
 function Contatos() {
+
+
+  
   return (
     <div className="contatos" id="contatos">
       <h3>Currículo</h3>

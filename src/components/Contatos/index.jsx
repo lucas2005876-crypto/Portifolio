@@ -16,27 +16,18 @@ function Contatos() {
           href="https://www.linkedin.com/in/lucas-santos-dev-em-treinamento/"
           target="_blank"
         >
-          <img
-            className={temaEscuro ? "iconRedesEscuro" : "iconRedes"}
-            src={temaEscuro ? "/redes/in_dark.png" : "/redes/in.png"}
-          />
+          <img className="iconRedesEscuro" src="/redes/in_dark.png" />
         </a>
 
         <a href="https://github.com/lucas2005876-crypto" target="_blank">
-          <img
-            className={temaEscuro ? "iconRedesEscuro" : "iconRedes"}
-            src={temaEscuro ? "/redes/gh_dark.png" : "/redes/gihu.png"}
-          />
+          <img className="iconRedesEscuro" src="/redes/gh_dark.png" />
         </a>
 
         <a
           href="https://www.instagram.com/lucasss.oliveira?igsh=dXpnbW9uam80eGQ="
           target="_blank"
         >
-          <img
-            className={temaEscuro ? "iconRedesEscuro" : "iconRedes"}
-            src={temaEscuro ? "/redes/insta_dark.png" : "/redes/insta.png"}
-          />
+          <img className="iconRedesEscuro" src="/redes/insta_dark.png" />
         </a>
       </div>
     </div>

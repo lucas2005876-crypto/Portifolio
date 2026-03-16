@@ -56,3 +56,7 @@
 .iconRedes:hover {
   transform: scale(1.1);
 }
+
+.iconRedesEscuro:hover {
+  transform: scale(1.1);
+}

@@ -1,10 +1,8 @@
 import "./Contatos.css";
-import { Header } from "../Header";
 
 function Contatos() {
+  const temaEscuro = document.body.classList.contains("tema-escuro");
 
-
-  
   return (
     <div className="contatos" id="contatos">
       <h3>Currículo</h3>
@@ -18,18 +16,27 @@ function Contatos() {
           href="https://www.linkedin.com/in/lucas-santos-dev-em-treinamento/"
           target="_blank"
         >
-          <img className="iconRedes" src="/redes/in.png" />
+          <img
+            className={temaEscuro ? "iconRedesEscuro" : "iconRedes"}
+            src={temaEscuro ? "/redes/in_dark.png" : "/redes/in.png"}
+          />
         </a>
 
         <a href="https://github.com/lucas2005876-crypto" target="_blank">
-          <img className="iconRedes" src="/redes/gihu.png" />
+          <img
+            className={temaEscuro ? "iconRedesEscuro" : "iconRedes"}
+            src={temaEscuro ? "/redes/gh_dark.png" : "/redes/gihu.png"}
+          />
         </a>
 
         <a
           href="https://www.instagram.com/lucasss.oliveira?igsh=dXpnbW9uam80eGQ="
           target="_blank"
         >
-          <img className="iconRedes" src="/redes/insta.png" />
+          <img
+            className={temaEscuro ? "iconRedesEscuro" : "iconRedes"}
+            src={temaEscuro ? "/redes/insta_dark.png" : "/redes/insta.png"}
+          />
         </a>
       </div>
     </div>

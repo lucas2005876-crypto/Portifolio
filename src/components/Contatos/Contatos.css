@@ -45,6 +45,13 @@
   width: 70px;
   transition: transform 0.2s ease;
 }
+.iconRedesEscuro {
+  width: 80px;
+  transition: transform 0.2s ease;
+  background-color: var(--cor-secundaria);
+  padding: 8px;
+  border-radius: 16px;
+}
 
 .iconRedes:hover {
   transform: scale(1.1);

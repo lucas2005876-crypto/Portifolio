@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <div className="header-page">
-      <button onClick={trocarTema}>Trocar Tema</button>
+      <button onClick={trocarTema} className={`botaoTema ${tema ? "claro" : "escuro"}`}></button>
       <div className="links-header">
         <a href="#sobre-mim">Sobre mim</a>
         <a href="#projetos">Projetos</a>

@@ -12,6 +12,7 @@
 
   .foto-topo {
     background-image: url("/images/foto_dark.png");
+    background-position: top;
   }
 }
 html,
